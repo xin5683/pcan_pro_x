@@ -406,10 +406,10 @@ static uint8_t *device_get_user_string( USBD_HandleTypeDef *pdev, uint8_t index,
   {
     case 6:
 #if PCAN_PRO_FD
-      USBD_GetString((uint8_t *)"XCAN-USB Pro FD LIN", USBD_StrDesc, length );
+      USBD_GetString((uint8_t *)"PCAN-USB Pro FD LIN", USBD_StrDesc, length );
       break;
 #elif PCAN_PRO
-      USBD_GetString((uint8_t *)"XCAN-USB-PRO LIN Device", USBD_StrDesc, length );
+      USBD_GetString((uint8_t *)"PCAN-USB-PRO LIN Device", USBD_StrDesc, length );
       break;
 #else
       /* fallthrough */
